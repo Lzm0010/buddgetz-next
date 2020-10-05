@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import NavStyles from '../styles/NavStyles';
 
 export default function Nav() {
     return (
-        <div>
+        <NavStyles>
             <Link href="/">
                 <a>Dashboard</a>
             </Link>
@@ -12,6 +13,12 @@ export default function Nav() {
             <Link href="/balancesheet">
                 <a>Balance Sheet</a>
             </Link>
-        </div>
+            <Link href="/signup">
+                <a>Sign Up</a>
+            </Link>
+            <Link href="/me">
+                <a>My Account</a>
+            </Link>
+        </NavStyles>
     )
 }
